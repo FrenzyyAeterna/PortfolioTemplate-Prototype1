@@ -1,0 +1,57 @@
+/* File Name: MainStyle.css */
+/* Author: Frenzyy */
+/* Description: Main CSS file for page background etc. */
+
+
+body {
+  font-family: monospace;
+  padding: 0px;
+  background-color: #282c33;
+  color: white;
+  font-size: 25px;
+  height: 100%;
+  width: inherit;
+  animation: fadeEffect 5s;
+  background-image: url(../Assets/BGImageLarge.png);
+  background-size: cover;
+}
+
+.titlecontainer {
+  width: auto;
+}
+
+.button1 {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+}
+/* Hr styles */
+.hrstyle1 {
+  border: 1px solid white;
+}
+
+.hrsmall {
+  width: 15%;
+  margin-left: 0;
+}
+
+.hrtemplate {
+ /* width: 50%; */
+ color:white;
+}
+
+.hrtitle {
+  height: 5px;
+  color: white;
+  background-color: white;
+  width: 25%;
+  margin-left: 50;
+}
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}

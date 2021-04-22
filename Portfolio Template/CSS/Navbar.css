@@ -1,0 +1,98 @@
+/* File Name: TopbarStyle.css */
+/* Author: Frenzyy */
+/* Description: CSS File for tabs. */
+
+/* Some tab style */
+.tab {
+  overflow: hidden;
+  border: 0.5px solid white;
+  background-color: #111;
+  color: #ccc;
+}
+
+/* Isn't my buttons cool? */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #ccc;
+}
+
+/* Hover Colour */
+.tab button:hover {
+  background-color: #647687;
+}
+
+/* Current page open */
+.tab button.active {
+  background-color: #647687;
+}
+
+/* Tab Content CSS */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc; 
+  border-top: none;
+  animation: fadeEffect 3s;
+  height: 100%;
+  margin: 0;
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.6); /* Apparently using opacity class also affects child elements, so I guess using rgba works? yeah it does advanced learning Object Oriented Programming and Css really pays off well */
+}
+
+/* Animation Class from .tabcontent */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.bg-img {
+  /* Note to self: using "link" as src is deprecated and does not work */
+  background-image: url(../Assets/Astorianewshaders.png);
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.topcontainer {
+  position: absolute;
+ /* margin: 20px; */
+  width: auto;
+}
+
+.topbartext {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: xx-large;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.topbartoptext {
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -o-text-stroke-color: black; /* Needed a second webkit because opera doesnt support webkits  */
+}
+
+.topbarbottomtext {
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  -o-text-stroke-color: black;
+}
